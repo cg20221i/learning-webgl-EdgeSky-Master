@@ -2,14 +2,14 @@ function main(){
     var canvas =document.getElementById("myCanvas");
     var gl = canvas.getContext("webgl");
     
-    //Vertex Shader
+    //Vertex Shader(Point a.k.a location Data)
     var vertexShaderCode =
     "void main () {" + "}";
     var vertexShader = gl.createShader(gl.VERTEX_SHADER);
     gl.shaderSource(vertexShader, vertexShaderCode);
     gl.compileShader(vertexShader);
     
-    //Fragment Shader
+    //Fragment Shader(Color Data)
     var fragmentShaderCode = 
     'void main() {}';
     var fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
